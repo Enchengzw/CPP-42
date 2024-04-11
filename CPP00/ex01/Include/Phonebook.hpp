@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Phonebook.class.hpp                                :+:      :+:    :+:   */
+/*   Phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:27:32 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 16:13:01 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 17:12:51 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_CLASS_H
-# define PHONEBOOK_CLASS_H
+#ifndef PHONEBOOK_H
+# define PHONEBOOK_H
 
 # include <string>
-# include "Contact.class.hpp"
+# include "Contact.hpp"
 
 class	PhoneBook {
 	private:

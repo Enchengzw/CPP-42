@@ -6,7 +6,7 @@
 #    By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/22 16:38:50 by ezhou             #+#    #+#              #
-#    Updated: 2024/04/11 16:11:43 by ezhou            ###   ########.fr        #
+#    Updated: 2024/04/11 17:31:04 by ezhou            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,13 +15,13 @@ COLOUR_RED=\033[0;31m
 COLOUR_BLUE=\033[0;34m
 COLOUR_END=\033[0m
 
-NAME = phonebook
+NAME = Zombie
 
 CC = c++
 
 CFLAGS = -Wextra -Werror -std=c++98
 
-SRC = Contact.cpp Phonebook.cpp main.cpp
+SRC = Zombie.cpp randomChump.cpp newZombie.cpp main.cpp
 
 INCLUDE = Include
 
@@ -33,7 +33,7 @@ $(NAME) : $(OBJ)
 	@$(CC) $(CFLAGS) -I./$(INCLUDE) -o $(NAME) $(OBJ)
 	@echo "$(COLOUR_GREEN)(•̀ᴗ•́)و $(NAME) generado!$(COLOUR_END)"
 
-%.o : %.c
+%.o : %.cpp
 	@$(CC) -I./Include -c -o $@ $<
 	@echo "$(COLOUR_BLUE)(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ Compilando archivos .c$(COLOUR_END)"
 

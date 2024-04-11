@@ -6,12 +6,12 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:33:20 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 16:32:08 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 17:12:59 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <Contact.class.hpp>
+#include <Contact.hpp>
 
 //Constructor and destructor
 Contact::Contact(void) :

@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.class.hpp                                  :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:33:27 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 15:50:53 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 17:37:01 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_CLASS_H
-# define CONTACT_CLASS_H
+#ifndef CONTACT_H
+# define CONTACT_H
 
 # include <string>
 
@@ -19,9 +19,7 @@ class	Contact {
 	private:
 		std::string	_firstname;
 		std::string	_lastname;
-		std::string	_nickname;
 		std::string	_number;
-		std::string	_secret;
 
 		bool		_containsOnlyAlpha(std::string const input);
 		bool		_containsOnlyDigits(std::string const input);
