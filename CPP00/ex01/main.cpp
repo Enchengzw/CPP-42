@@ -6,13 +6,13 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 13:59:03 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 14:01:30 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 16:20:26 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
-#include <Phonebook.class.hpp>
+#include "./Include/Phonebook.class.hpp"
 
 std::string	getInput(PhoneBook *book) {
 	std::string	userInput;
@@ -36,7 +36,11 @@ int	main(void) {
 		std::cout 	<< std::endl
 					<< "+---------------- Main Menu ----------------+" << std::endl
 					<< std::endl
-					<< "What would you like to do?" << std::endl << "> ";
+					<< "What would you like to do?" << std::endl 
+					<< "Please enter one of the following:" << std::endl
+					<< "\tADD\t: add a contact" << std::endl
+					<< "\tSEARCH\t: search contact list" << std::endl
+					<< "\tEXIT\t: exit the PhoneBook" << std::endl << "> ";
 		userInput = getInput(&book);
 		if (userInput == "EXIT")
 			break ;
@@ -52,7 +56,7 @@ int	main(void) {
 			std::cout	<< "Please enter one of the following:" << std::endl
 						<< "\tADD\t: add a contact" << std::endl
 						<< "\tSEARCH\t: search contact list" << std::endl
-						<< "\tEXIT\t: exit the FMN(TM) PhoneBook(c)" << std::endl;
+						<< "\tEXIT\t: exit the PhoneBook" << std::endl;
 		}
 	}
 	std::cout << "Exit" << std::endl;

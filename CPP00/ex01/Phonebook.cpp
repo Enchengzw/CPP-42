@@ -6,14 +6,14 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 13:23:09 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 14:03:57 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 16:13:18 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include <Phonebook.class.hpp>
+#include "./Include/Phonebook.class.hpp"
 
 //Constructor and destructor
 PhoneBook::PhoneBook(void) : 
@@ -53,6 +53,7 @@ void	PhoneBook::_printContactInfoToTable(int const index) const {
 	std::cout << "|" << std::setw(10) << index << "|";
 	_printTableString(this->_contactList[index].getFirstname());
 	_printTableString(this->_contactList[index].getLastname());
+	_printTableString(this->_contactList[index].getNumber());
 	std::cout	<< std::endl
 				<< "+----------+----------+----------+----------+" << std::endl;
 	return ;
