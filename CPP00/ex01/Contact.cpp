@@ -6,7 +6,7 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:33:20 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 16:12:30 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 16:23:56 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ bool	Contact::setFirstname(std::string str) {
 		return (false);
 	}
 	else if (!_containsOnlyAlpha(str)) {
-		std::cout << "Error: Names can only contain letters, spaces and hyphens." << std::endl;
+		std::cout << "Names can only contain letters, spaces and hyphens." << std::endl;
 		return (false);
 	}
 	str[0] = std::toupper(str[0]);
@@ -56,7 +56,7 @@ bool	Contact::setLastname(std::string str) {
 		return (false);
 	}
 	else if (!_containsOnlyAlpha(str)) {
-		std::cout << "Error: Names can only contain letters, spaces and hyphens." << std::endl;
+		std::cout << "Names can only contain letters, spaces and hyphens." << std::endl;
 		return (false);
 	}
 	std::string::iterator it;
@@ -72,7 +72,7 @@ bool	Contact::setNumber(std::string const str) {
 		return (false);
 	}
 	else if (!_containsOnlyDigits(str)) {
-		std::cout << "Error: Phone numbers can only contain digits." << std::endl;
+		std::cout << "Phone numbers can only contain digits." << std::endl;
 		return (false);
 	}
 	this->_number = str;

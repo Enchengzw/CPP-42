@@ -6,7 +6,7 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 13:23:09 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 16:13:18 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 16:23:07 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,12 +89,12 @@ bool	PhoneBook::_displayContactByIndex(std::string const input) const {
 			if (this->_contactList[index].displayContactInfo())
 				return (true);
 			else {
-				std::cout << "Error: No record at index [" << index << "]. Please ADD a contact and try again." << std::endl;
+				std::cout << "Error: No record at that index" << std::endl;
 				return (false);
 			}
 		}
 	}
-	std::cout << "Error: \'" << input << "' is not a valid index (a digit between 0 and 7). Please try again later." << std::endl;
+	std::cout << "Index out of bounds" << std::endl;
 	return (false);
 }
 
