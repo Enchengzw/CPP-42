@@ -6,13 +6,13 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 13:59:03 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 16:20:26 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 16:32:17 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
-#include "./Include/Phonebook.class.hpp"
+#include <Phonebook.class.hpp>
 
 std::string	getInput(PhoneBook *book) {
 	std::string	userInput;

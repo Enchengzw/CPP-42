@@ -6,7 +6,7 @@
 #    By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/22 16:38:50 by ezhou             #+#    #+#              #
-#    Updated: 2024/04/11 16:32:45 by ezhou            ###   ########.fr        #
+#    Updated: 2024/04/11 16:11:43 by ezhou            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,12 +30,12 @@ OBJ = $(SRC:.cpp=.o)
 all: $(NAME)
 
 $(NAME) : $(OBJ)
-	@$(CC) -I./$(INCLUDE) $(CFLAGS) -o $(NAME) $(OBJ)
+	@$(CC) $(CFLAGS) -I./$(INCLUDE) -o $(NAME) $(OBJ)
 	@echo "$(COLOUR_GREEN)(•̀ᴗ•́)و $(NAME) generado!$(COLOUR_END)"
 
-%.o : %.cpp
+%.o : %.c
 	@$(CC) -I./Include -c -o $@ $<
-	@echo "$(COLOUR_BLUE)(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ Compilando archivos .cpp$(COLOUR_END)"
+	@echo "$(COLOUR_BLUE)(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ Compilando archivos .c$(COLOUR_END)"
 
 clean:
 	@$(RM) $(OBJ)

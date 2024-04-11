@@ -6,14 +6,14 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 13:23:09 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/11 16:23:07 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/11 16:32:29 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include "./Include/Phonebook.class.hpp"
+#include <Phonebook.class.hpp>
 
 //Constructor and destructor
 PhoneBook::PhoneBook(void) : 
