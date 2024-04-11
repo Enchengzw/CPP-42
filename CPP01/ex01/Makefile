@@ -6,7 +6,7 @@
 #    By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/22 16:38:50 by ezhou             #+#    #+#              #
-#    Updated: 2024/04/11 17:31:04 by ezhou            ###   ########.fr        #
+#    Updated: 2024/04/11 17:56:28 by ezhou            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ CC = c++
 
 CFLAGS = -Wextra -Werror -std=c++98
 
-SRC = Zombie.cpp randomChump.cpp newZombie.cpp main.cpp
+SRC = Zombie.cpp randomChump.cpp newZombie.cpp main.cpp zombieHorde.cpp
 
 INCLUDE = Include
 

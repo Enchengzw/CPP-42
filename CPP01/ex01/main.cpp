@@ -2,8 +2,6 @@
 
 int main(void)
 {
-	Zombie *z1= newZombie("PZ");
-	delete(z1);
-	randomChump("Project Zomboid");
+	delete[](zombieHorde(3, "Dio"));
 	return(0);
 }
