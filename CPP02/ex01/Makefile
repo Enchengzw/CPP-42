@@ -6,7 +6,7 @@
 #    By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/22 16:38:50 by ezhou             #+#    #+#              #
-#    Updated: 2024/04/16 15:54:25 by ezhou            ###   ########.fr        #
+#    Updated: 2024/04/16 17:05:31 by ezhou            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,13 +15,13 @@ COLOUR_RED=\033[0;31m
 COLOUR_BLUE=\033[0;34m
 COLOUR_END=\033[0m
 
-NAME = Harl
+NAME = Fixed_point
 
 CC = c++
 
 CFLAGS = -Wextra -Werror -std=c++98
 
-SRC = main.cpp Harl.cpp
+SRC = main.cpp Fixed.cpp
 
 INCLUDE = Include
 
