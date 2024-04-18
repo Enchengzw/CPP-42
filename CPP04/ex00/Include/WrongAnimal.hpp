@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/16 16:30:49 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/18 16:22:03 by ezhou            ###   ########.fr       */
+/*   Created: 2024/04/18 13:46:51 by ezhou             #+#    #+#             */
+/*   Updated: 2024/04/18 17:44:41 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FIXED_H
-# define FIXED_H
+#ifndef WRONGANIMAL_H
+# define WRONGANIMAL_H
 
 # include <string>
 # include <iostream>
 
-class	Fixed {
+class	WrongAnimal{
 	public:
-		Fixed(void);
-		Fixed(Fixed const &src);
-		~Fixed(void);
-		Fixed &operator=( const Fixed &src);
-		int	getRawBits( void ) const;
-		void setRawBits(int const raw);
-	
-	private:
-		int					_rawbits;
-		static const int	fractional_bits = 8;
-};
+		WrongAnimal(void);
+		WrongAnimal(std::string type);
+		WrongAnimal(WrongAnimal const &src);
+		~WrongAnimal(void);
+		WrongAnimal &operator=( const WrongAnimal &src);
 
+		std::string	getType() const;
+		bool		setType(std::string type);
+		void		makeSound() const;
+	protected:
+		std::string _type;
+};
 
 #endif

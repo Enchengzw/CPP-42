@@ -1,19 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/18 17:59:04 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/18 17:59:05 by ezhou            ###   ########.fr       */
+/*   Created: 2024/04/18 15:41:41 by ezhou             #+#    #+#             */
+/*   Updated: 2024/04/18 17:44:53 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Zombie.hpp"
+#ifndef WRONGCAT_H
+# define WRONGCAT_H
 
-int main(void)
-{
-	delete[](zombieHorde(3, "Dio"));
-	return(0);
-}
+# include <WrongAnimal.hpp>
+
+class	WrongCat : public WrongAnimal{
+	public:
+		WrongCat(void);
+		WrongCat(const WrongCat &src);
+		~WrongCat(void);
+		WrongCat &operator=( const WrongCat &src);
+};
+
+#endif

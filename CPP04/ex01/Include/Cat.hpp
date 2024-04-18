@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/18 17:59:04 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/18 17:59:05 by ezhou            ###   ########.fr       */
+/*   Created: 2024/04/18 15:41:41 by ezhou             #+#    #+#             */
+/*   Updated: 2024/04/18 17:54:11 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Zombie.hpp"
+#ifndef CAT_H
+# define CAT_H
 
-int main(void)
-{
-	delete[](zombieHorde(3, "Dio"));
-	return(0);
-}
+# include <Animal.hpp>
+# include <Brain.hpp>
+
+class	Cat : public Animal{
+	public:
+		Cat(void);
+		Cat(const Cat &src);
+		~Cat(void);
+		Cat &operator=( const Cat &src);
+	private:
+		Brain *_brain;
+};
+
+#endif
