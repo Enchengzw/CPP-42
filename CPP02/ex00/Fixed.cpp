@@ -6,13 +6,13 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 16:47:25 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/17 10:49:43 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/18 10:26:53 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <Fixed.hpp>
 
-Fixed::Fixed(void) : _value(0){
+Fixed::Fixed(void) : _rawbits(0){
 	std::cout << "Default constructor called" << std::endl;
 	return ;
 }
