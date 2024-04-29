@@ -6,7 +6,7 @@
 /*   By: ezhou <ezhou@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 13:11:43 by ezhou             #+#    #+#             */
-/*   Updated: 2024/04/12 16:45:40 by ezhou            ###   ########.fr       */
+/*   Updated: 2024/04/29 11:41:46 by ezhou            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ int main(int argc, char **argv)
 		std::cerr << "Error opening Infile." << std::endl;
 		return (1);
 	}
-	std::ofstream Outfile("result.txt");
+	std::string out = argv[1];
+	std::ofstream Outfile(out.append(".replace"));
 	if (!Outfile){
 		std::cerr << "Error opening Outfile." << std::endl;
 	}
